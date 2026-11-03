@@ -243,7 +243,7 @@
 					39 00 00 40 00 00 02 6F 02
 					39 00 00 40 00 00 02 F9 04
 					39 00 00 00 00 00 02 5A 00
-					/*Chopper setting for 60Hz 网络纹*/
+					/*Chopper setting for 60Hz mesh pattern*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 23
 					39 00 00 00 00 00 04 D9 81 C9 13
@@ -434,12 +434,12 @@
 					39 00 00 00 00 00 02 6F A4
 					39 00 00 00 00 00 02 BA E4
 					39 00 00 00 00 00 02 6F A8
-					/* 120Hz 低频PWM: 00 00 , 高频PWM： 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 , high-frequency PWM: 22 22 */
 					39 00 00 00 00 00 03 BA 00 00
 					39 00 00 00 00 00 02 6F B0
-					/* 120Hz 低频PWM: 00 00 00 00 , 高频PWM： 22 22 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 00 00 , high-frequency PWM: 22 22 22 22 */
 					39 00 00 00 00 00 05 BA 00 00 00 00
-					/*高频pwm vref设定*/
+					/*high-frequency PWM vref setting*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 28
 					39 00 00 00 00 00 02 B9 AA
@@ -520,7 +520,7 @@
 					39 00 00 40 00 00 02 6F 02
 					39 00 00 40 00 00 02 F9 04
 					39 00 00 00 00 00 02 5A 00
-					/*Chopper setting for 60Hz 网络纹*/
+					/*Chopper setting for 60Hz mesh pattern*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 23
 					39 00 00 00 00 00 04 D9 81 C9 13
@@ -711,12 +711,12 @@
 					39 00 00 00 00 00 02 6F A4
 					39 00 00 00 00 00 02 BA E4
 					39 00 00 00 00 00 02 6F A8
-					/* 120Hz 低频PWM: 00 00 , 高频PWM： 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 , high-frequency PWM: 22 22 */
 					39 00 00 00 00 00 03 BA 22 22
 					39 00 00 00 00 00 02 6F B0
-					/* 120Hz 低频PWM: 00 00 00 00 , 高频PWM： 22 22 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 00 00 , high-frequency PWM: 22 22 22 22 */
 					39 00 00 00 00 00 05 BA 22 22 22 22
-					/*高频pwm vref设定*/
+					/*high-frequency PWM vref setting*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 28
 					39 00 00 00 00 00 02 B9 AA
@@ -1119,7 +1119,7 @@
 					39 00 00 40 00 00 02 6F 02
 					39 00 00 40 00 00 02 F9 04
 					39 00 00 00 00 00 02 5A 00
-					/*Chopper setting for 60Hz 网络纹*/
+					/*Chopper setting for 60Hz mesh pattern*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 23
 					39 00 00 00 00 00 04 D9 81 C9 13
@@ -1310,12 +1310,12 @@
 					39 00 00 00 00 00 02 6F A4
 					39 00 00 00 00 00 02 BA E4
 					39 00 00 00 00 00 02 6F A8
-					/* 90Hz 低频PWM: 11 11*/
+					/* 90Hz low-frequency PWM: 11 11*/
 					39 00 00 00 00 00 03 BA 11 11
 					39 00 00 00 00 00 02 6F B0
-					/* 90Hz 低频PWM: 11 11 11 11  */
+					/* 90Hz low-frequency PWM: 11 11 11 11  */
 					39 00 00 00 00 00 05 BA 11 11 11 11
-					/*高频pwm vref设定*/
+					/*high-frequency PWM vref setting*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 28
 					39 00 00 00 00 00 02 B9 AA
@@ -1715,7 +1715,7 @@
 					39 00 00 40 00 00 02 6F 02
 					39 00 00 40 00 00 02 F9 04
 					39 00 00 00 00 00 02 5A 00
-					/*Chopper setting for 60Hz 网络纹*/
+					/*Chopper setting for 60Hz mesh pattern*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 23
 					39 00 00 00 00 00 04 D9 81 C9 13
@@ -1906,12 +1906,12 @@
 					39 00 00 00 00 00 02 6F A4
 					39 00 00 00 00 00 02 BA E4
 					39 00 00 00 00 00 02 6F A8
-					/* 120Hz 低频PWM: 00 00 , 高频PWM： 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 , high-frequency PWM: 22 22 */
 					39 00 00 00 00 00 03 BA 00 00
 					39 00 00 00 00 00 02 6F B0
-					/* 120Hz 低频PWM: 00 00 00 00 , 高频PWM： 22 22 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 00 00 , high-frequency PWM: 22 22 22 22 */
 					39 00 00 00 00 00 05 BA 00 00 00 00
-					/*高频pwm vref设定*/
+					/*high-frequency PWM vref setting*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 28
 					39 00 00 00 00 00 02 B9 AA
@@ -1992,7 +1992,7 @@
 					39 00 00 40 00 00 02 6F 02
 					39 00 00 40 00 00 02 F9 04
 					39 00 00 00 00 00 02 5A 00
-					/*Chopper setting for 60Hz 网络纹*/
+					/*Chopper setting for 60Hz mesh pattern*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 23
 					39 00 00 00 00 00 04 D9 81 C9 13
@@ -2183,12 +2183,12 @@
 					39 00 00 00 00 00 02 6F A4
 					39 00 00 00 00 00 02 BA E4
 					39 00 00 00 00 00 02 6F A8
-					/* 120Hz 低频PWM: 00 00 , 高频PWM： 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 , high-frequency PWM: 22 22 */
 					39 00 00 00 00 00 03 BA 22 22
 					39 00 00 00 00 00 02 6F B0
-					/* 120Hz 低频PWM: 00 00 00 00 , 高频PWM： 22 22 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 00 00 , high-frequency PWM: 22 22 22 22 */
 					39 00 00 00 00 00 05 BA 22 22 22 22
-					/*高频pwm vref设定*/
+					/*high-frequency PWM vref setting*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 28
 					39 00 00 00 00 00 02 B9 AA
@@ -2621,7 +2621,7 @@
 					39 00 00 40 00 00 02 6F 02
 					39 00 00 40 00 00 02 F9 04
 					39 00 00 00 00 00 02 5A 00
-					/*Chopper setting for 60Hz 网络纹*/
+					/*Chopper setting for 60Hz mesh pattern*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 23
 					39 00 00 00 00 00 04 D9 81 C9 13
@@ -2815,12 +2815,12 @@
 					39 00 00 00 00 00 02 6F A4
 					39 00 00 00 00 00 02 BA E4
 					39 00 00 00 00 00 02 6F A8
-					/* 120Hz 低频PWM: 00 00 , 高频PWM： 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 , high-frequency PWM: 22 22 */
 					39 00 00 00 00 00 03 BA 00 00
 					39 00 00 00 00 00 02 6F B0
-					/* 120Hz 低频PWM: 00 00 00 00 , 高频PWM： 22 22 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 00 00 , high-frequency PWM: 22 22 22 22 */
 					39 00 00 00 00 00 05 BA 00 00 00 00
-					/*高频pwm vref设定*/
+					/*high-frequency PWM vref setting*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 28
 					39 00 00 00 00 00 02 B9 AA
@@ -2901,7 +2901,7 @@
 					39 00 00 40 00 00 02 6F 02
 					39 00 00 40 00 00 02 F9 04
 					39 00 00 00 00 00 02 5A 00
-					/*Chopper setting for 60Hz 网络纹*/
+					/*Chopper setting for 60Hz mesh pattern*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 23
 					39 00 00 00 00 00 04 D9 81 C9 13
@@ -3102,12 +3102,12 @@
 					39 00 00 00 00 00 02 6F A4
 					39 00 00 00 00 00 02 BA E4
 					39 00 00 00 00 00 02 6F A8
-					/* 120Hz 低频PWM: 00 00 , 高频PWM： 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 , high-frequency PWM: 22 22 */
 					39 00 00 00 00 00 03 BA 22 22
 					39 00 00 00 00 00 02 6F B0
-					/* 120Hz 低频PWM: 00 00 00 00 , 高频PWM： 22 22 22 22 */
+					/* 120Hz low-frequency PWM: 00 00 00 00 , high-frequency PWM: 22 22 22 22 */
 					39 00 00 00 00 00 05 BA 22 22 22 22
-					/*高频pwm vref设定*/
+					/*high-frequency PWM vref setting*/
 					39 00 00 40 00 00 06 F0 55 AA 52 08 01
 					39 00 00 40 00 00 02 6F 28
 					39 00 00 00 00 00 02 B9 AA
