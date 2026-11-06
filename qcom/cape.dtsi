@@ -427,7 +427,9 @@
 
 	ramoops_mem: ramoops_region {
 		alloc-ranges = <0x0 0x00000000 0xffffffff 0xffffffff>;
-		size = <0x0 0x200000>;
+		/* [xi-a17] 2MB 太小：pmsg 已占满整个区域，没有 console 份额，
+		 * 内核 panic 时 pstore 拿不到任何 console 日志。扩到 4MB。 */
+		size = <0x0 0x400000>;
 		no-map;
 	};
 };
@@ -2159,7 +2161,10 @@
 	qcom_ramoops: qcom-ramoops {
 		compatible = "qcom,ramoops";
 		memory-region = <&ramoops_mem>;
-		pmsg-size = <0x200000>;
+		/* [xi-a17] 4MB 布局：record 128K + console 1M + pmsg 1M，留余量 */
+		record-size = <0x20000>;
+		console-size = <0x100000>;
+		pmsg-size = <0x100000>;
 		mem-type = <2>;
 	};
 
