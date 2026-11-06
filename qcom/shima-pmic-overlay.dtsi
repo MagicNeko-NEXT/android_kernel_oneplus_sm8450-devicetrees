@@ -58,7 +58,7 @@
 	/delete-node/ pmr735a_die_temp;
 
 	pm8350_quiet_therm {
-		reg = <PM8350_ADC7_AMUX_THM1_100K_PU>;
+		reg = <PM8350_ADC7_AMUX_THM1_100K_PU(1)>;
 		label = "pm8350_quiet_therm";
 		qcom,ratiometric;
 		qcom,hw-settle-time = <200>;
@@ -66,7 +66,7 @@
 	};
 
 	pm8350_cam_flash_therm {
-		reg = <PM8350_ADC7_AMUX_THM2_100K_PU>;
+		reg = <PM8350_ADC7_AMUX_THM2_100K_PU(1)>;
 		label = "pm8350_cam_flash_therm";
 		qcom,ratiometric;
 		qcom,hw-settle-time = <200>;
@@ -74,7 +74,7 @@
 	};
 
 	pm8350_wide_rfc_therm {
-		reg = <PM8350_ADC7_AMUX_THM4_100K_PU>;
+		reg = <PM8350_ADC7_AMUX_THM4_100K_PU(1)>;
 		label = "pm8350_wide_rfc_therm";
 		qcom,ratiometric;
 		qcom,hw-settle-time = <200>;
@@ -107,28 +107,28 @@
 };
 
 &pmk8350_adc_tm {
-	io-channels = <&pmk8350_vadc PM8350_ADC7_AMUX_THM1_100K_PU>,
-			<&pmk8350_vadc PM8350_ADC7_AMUX_THM2_100K_PU>,
-			<&pmk8350_vadc PM8350_ADC7_AMUX_THM4_100K_PU>,
+	io-channels = <&pmk8350_vadc PM8350_ADC7_AMUX_THM1_100K_PU(1)>,
+			<&pmk8350_vadc PM8350_ADC7_AMUX_THM2_100K_PU(1)>,
+			<&pmk8350_vadc PM8350_ADC7_AMUX_THM4_100K_PU(1)>,
 			<&pmk8350_vadc PM8350B_ADC7_AMUX_THM4_100K_PU>,
 			<&pmk8350_vadc PM8350B_ADC7_GPIO2_100K_PU>,
 			<&pmk8350_vadc PMK8350_ADC7_AMUX_THM1_100K_PU>,
 			<&pmk8350_vadc PMR735B_ADC7_GPIO3_100K_PU>;
 
 	pm8350_quiet_therm {
-		reg = <PM8350_ADC7_AMUX_THM1_100K_PU>;
+		reg = <PM8350_ADC7_AMUX_THM1_100K_PU(1)>;
 		qcom,ratiometric;
 		qcom,hw-settle-time = <200>;
 	};
 
 	pm8350_cam_flash_therm {
-		reg = <PM8350_ADC7_AMUX_THM2_100K_PU>;
+		reg = <PM8350_ADC7_AMUX_THM2_100K_PU(1)>;
 		qcom,ratiometric;
 		qcom,hw-settle-time = <200>;
 	};
 
 	pm8350_wide_rfc_therm {
-		reg = <PM8350_ADC7_AMUX_THM4_100K_PU>;
+		reg = <PM8350_ADC7_AMUX_THM4_100K_PU(1)>;
 		qcom,ratiometric;
 		qcom,hw-settle-time = <200>;
 	};
@@ -163,7 +163,7 @@
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
 		thermal-governor = "user_space";
-		thermal-sensors = <&pmk8350_adc_tm PM8350_ADC7_AMUX_THM1_100K_PU>;
+		thermal-sensors = <&pmk8350_adc_tm PM8350_ADC7_AMUX_THM1_100K_PU(1)>;
 		wake-capable-sensor;
 		trips {
 			active-config0 {
@@ -178,7 +178,7 @@
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
 		thermal-governor = "user_space";
-		thermal-sensors = <&pmk8350_adc_tm PM8350_ADC7_AMUX_THM2_100K_PU>;
+		thermal-sensors = <&pmk8350_adc_tm PM8350_ADC7_AMUX_THM2_100K_PU(1)>;
 		wake-capable-sensor;
 		trips {
 			active-config0 {
@@ -193,7 +193,7 @@
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
 		thermal-governor = "user_space";
-		thermal-sensors = <&pmk8350_adc_tm PM8350_ADC7_AMUX_THM4_100K_PU>;
+		thermal-sensors = <&pmk8350_adc_tm PM8350_ADC7_AMUX_THM4_100K_PU(1)>;
 		wake-capable-sensor;
 		trips {
 			active-config0 {
@@ -476,7 +476,7 @@
 };
 
 &pm8350_tz {
-	io-channels = <&pmk8350_vadc PM8350_ADC7_DIE_TEMP>;
+	io-channels = <&pmk8350_vadc PM8350_ADC7_DIE_TEMP(1)>;
 	io-channel-names = "thermal";
 };
 

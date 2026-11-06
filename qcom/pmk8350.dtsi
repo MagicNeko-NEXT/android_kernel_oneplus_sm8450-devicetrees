@@ -84,25 +84,25 @@
 
 			/* PM8350 Channel nodes */
 			pm8350_ref_gnd {
-				reg = <PM8350_ADC7_REF_GND>;
+				reg = <PM8350_ADC7_REF_GND(1)>;
 				label = "pm8350_ref_gnd";
 				qcom,pre-scaling = <1 1>;
 			};
 
 			pm8350_vref_1p25 {
-				reg = <PM8350_ADC7_1P25VREF>;
+				reg = <PM8350_ADC7_1P25VREF(1)>;
 				label = "pm8350_vref_1p25";
 				qcom,pre-scaling = <1 1>;
 			};
 
 			pm8350_die_temp {
-				reg = <PM8350_ADC7_DIE_TEMP>;
+				reg = <PM8350_ADC7_DIE_TEMP(1)>;
 				label = "pm8350_die_temp";
 				qcom,pre-scaling = <1 1>;
 			};
 
 			pm8350_vph_pwr {
-				reg = <PM8350_ADC7_VPH_PWR>;
+				reg = <PM8350_ADC7_VPH_PWR(1)>;
 				label = "pm8350_vph_pwr";
 				qcom,pre-scaling = <1 3>;
 			};

@@ -888,7 +888,7 @@
 
 &pmk8350_vadc {
 	usb_temp_adc {
-		reg = <PM8350_ADC7_GPIO1_100K_PU>;
+		reg = <PM8350_ADC7_GPIO1_100K_PU(1)>;
 		label = "usb_temp_adc";
 		qcom,pre-scaling = <1 1>;
 		qcom,ratiometric;
@@ -896,7 +896,7 @@
 		qcom,scale-fn-type = <OPLUS_ADC_SCALE_HW_CALIB_DEFAULT>;
 	};
 	usb_supplementary_temp_adc {
-		reg = <PM8350_ADC7_GPIO2_100K_PU>;
+		reg = <PM8350_ADC7_GPIO2_100K_PU(1)>;
 		label = "usb_supplementary_temp_adc";
 		qcom,pre-scaling = <1 1>;
 		qcom,ratiometric;
@@ -904,7 +904,7 @@
 		qcom,scale-fn-type = <OPLUS_ADC_SCALE_HW_CALIB_DEFAULT>;
 	};
 	subboard_temp_adc {
-		reg = <PM8350_ADC7_GPIO4_100K_PU>;
+		reg = <PM8350_ADC7_GPIO4_100K_PU(1)>;
 		label = "subboard_temp_adc";
 		qcom,pre-scaling = <1 1>;
 		qcom,ratiometric;
@@ -914,9 +914,9 @@
 };
 
 &battery_charger {
-	io-channels	= <&pmk8350_vadc PM8350_ADC7_GPIO1_100K_PU>,
-					<&pmk8350_vadc PM8350_ADC7_GPIO2_100K_PU>,
-					<&pmk8350_vadc PM8350_ADC7_GPIO4_100K_PU>;
+	io-channels	= <&pmk8350_vadc PM8350_ADC7_GPIO1_100K_PU(1)>,
+					<&pmk8350_vadc PM8350_ADC7_GPIO2_100K_PU(1)>,
+					<&pmk8350_vadc PM8350_ADC7_GPIO4_100K_PU(1)>;
 	io-channel-names = "usb_temp_adc",
 						"usb_supplementary_temp_adc",
 						"subboard_temp_adc";
@@ -1109,7 +1109,7 @@
 		status = "ok";
 		compatible = "oplus,common-charge";
 
-		io-channels = <&pmk8350_vadc PM8350_ADC7_AMUX_THM3_100K_PU>;
+		io-channels = <&pmk8350_vadc PM8350_ADC7_AMUX_THM3_100K_PU(1)>;
 		io-channel-names = "pm8350_hot_pocket_therm";
 
 		oplus,skin_temp_chan = "pm8350_hot_pocket_therm";
