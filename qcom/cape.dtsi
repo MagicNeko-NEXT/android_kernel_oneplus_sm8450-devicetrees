@@ -651,7 +651,7 @@
 		power-domains = <&CLUSTER_PD>;
 
 		clock_rpmh: qcom,rpmhclk {
-			compatible = "qcom,waipio-rpmh-clk";
+			compatible = "qcom,sm8450-rpmh-clk";
 			#clock-cells = <1>;
 		};
 
@@ -2480,7 +2480,7 @@
 	};
 
 	aoss_qmp: power-controller@c300000 {
-		compatible = "qcom,waipio-aoss-qmp";
+		compatible = "qcom,waipio-aoss-qmp", "qcom,aoss-qmp";
 		reg = <0xc300000 0x400>;
 		interrupt-parent = <&ipcc_mproc>;
 		interrupts = <IPCC_CLIENT_AOP
