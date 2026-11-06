@@ -7,7 +7,7 @@
 
 &pmk8350_vadc {
 	gpio1b_v {
-		reg = <PM8350_ADC7_AMUX_THM5>;
+		reg = <PM8350_ADC7_AMUX_THM5(1)>;
 		label = "gpio1b_v";
 		qcom,pre-scaling = <1 1>;
 	};
@@ -27,7 +27,7 @@
 		pinctrl-2 = <&aboard_pin_gpio0_active>;
 		pinctrl-3 = <&aboard_pin_gpio0_idle>;
 
-		io-channels= <&pmk8350_vadc PM8350_ADC7_AMUX_THM5>;
+		io-channels= <&pmk8350_vadc PM8350_ADC7_AMUX_THM5(1)>;
 		io-channel-names= "vph_pwr_voltage_sub";
 
 		// ovaltine A1 platelets
