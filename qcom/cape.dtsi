@@ -447,15 +447,17 @@
 			size = <0x0 0x400000>;
 	};
 
-	ramoops_mem: ramoops_region {
+	/*
+	 * Bring-up: the 5.10 kernel places its 2 MB pmsg-only zone here, so a 6.6
+	 * console zone at the same address and size is read back as pmsg-ramoops-0
+	 * by the 5.10 recovery. Write-combined, so a warm reset doesn't lose it in
+	 * the CPU caches.
+	 */
+	ramoops_mem: ramoops_region@a3fe00000 {
 		compatible = "ramoops";
-		alloc-ranges = <0x0 0x00000000 0xffffffff 0xffffffff>;
-		size = <0x0 0x800000>;
-		record-size = <0x40000>;
-		console-size = <0x100000>;
-		pmsg-size = <0x200000>;
-		max-reason = <2>;
-		mem-type = <2>;
+		reg = <0xa 0x3fe00000 0x0 0x200000>;
+		console-size = <0x200000>;
+		mem-type = <0>;
 	};
 };
 
