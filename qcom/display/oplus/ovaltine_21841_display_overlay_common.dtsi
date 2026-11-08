@@ -3,3 +3,22 @@
 	qcom,dp-aux-switch = <&fsa4480_new>;
 };
 /* OPLUS_ARCH_EXTENDS */
+
+/*
+ * Ovaltine has a USB 2.0 Type-C port and one DSI panel. On 6.6, the DP
+ * connector probes into unclocked DP registers and hangs the SoC, so drop
+ * DP and the unused second DSI display, as cupid-development does for the
+ * SM8475 boards. The panel itself comes from the bootloader's
+ * msm_drm.dsi_display0= argument.
+ */
+&sde_dp {
+	status = "disabled";
+};
+
+&sde_dsi1 {
+	status = "disabled";
+};
+
+&mdss_mdp {
+	connectors = <&sde_dsi &smmu_sde_unsec &smmu_sde_sec &sde_wb &sde_rscc>;
+};
