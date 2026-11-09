@@ -23,11 +23,6 @@
 	size = <0x0 0x4800000>;
 };
 
-&msm_fastrpc {
-	/delete-property/ qcom,fastrpc-slpi-sensors-pdr;
-	qcom,fastrpc-adsp-sensors-pdr;
-};
-
 /* GPIO 3 is the display LCD reset pin, which is occupied by audio. */
 /* Therefore, gpio3 is modified to gpio159. */
 /* Gpio159 is not used in the 8475T baseline. */
