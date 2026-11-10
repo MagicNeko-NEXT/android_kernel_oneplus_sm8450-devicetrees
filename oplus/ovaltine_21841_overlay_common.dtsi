@@ -127,3 +127,11 @@
 	dr_mode = "peripheral";
 };
 
+&spmi_bus {
+	/delete-node/ qcom,pm8010@9;
+};
+
+&thermal_zones {
+	/delete-node/ pm8010j_tz;
+};
+
