@@ -122,3 +122,8 @@
 	};
 	//#endif /* OPLUS_FEATRUE_DUAL_SIM_DETECT */
 };
+
+&dwc3_0 {
+	dr_mode = "peripheral";
+};
+
