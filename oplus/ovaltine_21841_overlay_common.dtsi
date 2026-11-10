@@ -74,6 +74,7 @@
 
 &thermal_zones {
 
+	/delete-node/ tof-therm;
 	/delete-node/ pm8350_rear_tof_therm;
 
 	pmr735a_pa3_usr {
