@@ -448,15 +448,23 @@
 	};
 
 	/*
-	 * Bring-up: the 5.10 kernel places its 2 MB pmsg-only zone here, so a 6.6
-	 * console zone at the same address and size is read back as pmsg-ramoops-0
-	 * by the 5.10 recovery. Write-combined, so a warm reset doesn't lose it in
-	 * the CPU caches.
+	 * Bring-up: the 5.10 kernel places its 2 MB pmsg-only zone here, so the
+	 * 6.6 console zone stays at the same address and size and is read back as
+	 * pmsg-ramoops-0 by the 5.10 recovery. Write-combined, so a warm reset
+	 * doesn't lose it in the CPU caches.
+	 *
+	 * The zone also needs a record area: ramoops_init_przs() silently skips
+	 * the dmesg zone when record-size is 0 or when the space left after the
+	 * console/pmsg zones is 0, and without it nothing is ever registered in
+	 * /sys/fs/pstore, so a panic leaves no trace. Carve the record area out
+	 * of the same 2 MB: 1.5 MB of records plus the 512 KB console that the
+	 * 5.10 recovery reads.
 	 */
 	ramoops_mem: ramoops_region@a3fe00000 {
 		compatible = "ramoops";
 		reg = <0xa 0x3fe00000 0x0 0x200000>;
-		console-size = <0x200000>;
+		record-size = <0x40000>;
+		console-size = <0x80000>;
 		mem-type = <0>;
 	};
 };
